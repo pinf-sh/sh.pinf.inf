@@ -8,7 +8,7 @@ Usage
 -----
 
     nvm use 10
-    npm install -g
+    npm install -g pinf
 
     echo '#!/usr/bin/env inf
     {
