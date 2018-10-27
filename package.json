@@ -1,0 +1,16 @@
+{
+    "name": "sh.pinf.inf",
+    "version": "0.1.0",
+    "bin": {
+        "pinf": "pinf.js"
+    },
+    "devDependencies": {
+        "bash.origin.test": "0.1.39"
+    },
+    "dependencies": {
+        "@pinf-it/inf": "^0.1.15"
+    },
+    "scripts": {
+        "test": "bash.origin.test examples"
+    }
+}
