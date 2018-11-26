@@ -1,4 +1,5 @@
 #!/usr/bin/env inf
 {
-    "org.pinf.genesis.inception/sh.pinf.0 #": "./"
+    "#": "org.pinf.inf/",
+    "pinf @ sh.pinf.0 #": "./"
 }

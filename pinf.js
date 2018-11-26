@@ -27,7 +27,7 @@ FS.writeFileSync(bootInfPath, `#!/usr/bin/env inf
         "./${PATH.relative(PATH.dirname(bootInfPath), PATH.join(__dirname, '_#_org.pinf.genesis.inception_#_sh.pinf.0_.'))}",
         "./${PATH.relative(PATH.dirname(bootInfPath), rootInfPath).replace(/\.inf\.json$/, ".")}"
     ],
-    "org.pinf.genesis.inception/sh.pinf.0 # boot()": {
+    "pinf @ sh.pinf.0 # boot()": {
         "args": "%%{args}%%"
     }
 }`, "utf8");

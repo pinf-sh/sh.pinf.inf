@@ -30,7 +30,7 @@ exports.inf = async function (inf) {
                     throw new Error(`'commands.${command}' property not set for 'genesis.inception' pointer!`);
                 }
 
-                const path = inf.LIB.PATH.join(value.baseDir, `.~sh.pinf.inf~ginseng.genesis~${command}.sh`);
+                const path = inf.LIB.PATH.join(value.baseDir, `.~sh.pinf.inf~ginseng.genesis.inception~${command}.sh`);
 
                 await inf.LIB.FS.outputFileAsync(path, `#!/usr/bin/env bash\n${config.commands[command]}`, "utf8");
                 await inf.LIB.FS.chmodAsync(path, '0755');

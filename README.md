@@ -12,7 +12,7 @@ Usage
 
     echo '#!/usr/bin/env inf
     {
-        "org.pinf.genesis.inception/sh.pinf.0 # genesis.inception": {
+        "pinf @ sh.pinf.0 # genesis.inception": {
             "commands": {
                 "open": "echo 'Hello World!'"
             }
