@@ -1,0 +1,23 @@
+#!/usr/bin/env inf
+{
+    "app #": (javascript (exports) >>>
+        'use strict';
+
+        exports.inf = async function (INF, ALIAS) {
+        
+            return {
+                invoke: async function (pointer, value) {
+        
+                    if (pointer === "build()") {
+        
+                        console.log("Build!");
+        
+                        return true;
+                    }
+                }        
+            }
+        }
+    <<<),
+
+    "pinf @ # on.turn": "app # build()"
+}

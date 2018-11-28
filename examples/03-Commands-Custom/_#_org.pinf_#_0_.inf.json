@@ -1,0 +1,31 @@
+#!/usr/bin/env inf
+{
+    "app #": (javascript (exports) >>>
+        'use strict';
+
+        exports.inf = async function (INF, ALIAS) {
+        
+            return {
+                invoke: async function (pointer, value) {
+        
+                    if (pointer === "build()") {
+        
+                        console.log("Build!");
+        
+                        return true;
+                    }
+                }        
+            }
+        }
+    <<<),
+    "pinf @ # on.turn": "app # build()",
+
+    "//": "NOTE: The code above will NOT run as 'pinf @ # on.turn' will never be invoked because the custom 'turn' command is specified below.",
+    
+    "pinf @ sh.pinf.0 # genesis.inception": {
+        "on": {
+            "turn": "echo 'Custom Turn'",
+            "open": "echo 'Custom Open'"
+        }
+    }
+}
